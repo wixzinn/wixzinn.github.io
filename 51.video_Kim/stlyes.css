@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Make body and html take up full height and remove default margin */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for full-screen background video */
+#bg-video {
+  position: fixed;          /* Keep video fixed to screen */
+  top: 0;
+  left: 0;
+  width: 100vw;             /* Full width of the viewport */
+  height: 100vh;            /* Full height of the viewport */
+  object-fit: cover;        /* Crop the video to cover entire area */
+  z-index: -1;              /* Place video behind other elements */
+}
+
+/* Centered text box with quote */
+.quote-box {
+  position: absolute;
+  top: 50%;                 /* Move to vertical center */
+  left: 50%;                /* Move to horizontal center */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  background-color: lightgray; /* lightgray background */
+  color: black;             /* Black text color */
+  font-weight: bold;        /* Bold text */
+  padding: 20px 30px;       /* Padding inside the box */
+  border-radius: 10px;      /* Rounded corners */
+  text-align: center;       /* Center the text */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Optional shadow for readability */
+  max-width: 80%;           /* Responsive width */
+  font-size: 1.5rem;        /* Readable text size */
+}
