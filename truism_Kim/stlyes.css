@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* Make body and html take up full height and remove default margin */
+html, body {
+  height: 100%;
+  margin: 0;
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}s
+
+/* Style for full-screen background video */
+#bg-video {
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100vw;             
+  height: 100vh;            
+  object-fit: cover;        
+  z-index: -1;              
+}
+
+/* Centered text box with quote */
+.quote-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;       /* remove the background */
+  color: #ffffff;                /* white letter */
+  font-weight: 600;              
+  padding: 20px 30px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6); 
+  max-width: 80%;
+  font-size: 1.6rem;
+  border-radius: 10px; 
+}
